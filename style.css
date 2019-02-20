@@ -78,6 +78,10 @@ hr + i{
 }
 
 
+ul{
+    list-style: none;
+}
+
 
 
 /*containers*/
@@ -241,20 +245,20 @@ menu{
 
 #features{
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    margin-left: 0;
    margin-right: 0; 
    margin-top: 30px;
-   height: 30rem;
+
 }
 
 #features>ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
-    margin-right: 10%;
-    align-self: flex-end;
+    width: 80%;
+    margin: 0 auto;
+    
 }
 
 
@@ -295,7 +299,7 @@ iframe{
 
 
 
-/*pad and big screen*/ 
+/*pad screen*/ 
 
 
 @media screen and (min-width: 768px){ 
@@ -316,10 +320,6 @@ h1{
 }
 
 
-ul{
-    list-style: none;
-}
-
 
 ul.main-navigation > li{
     margin: 20px;
@@ -333,11 +333,20 @@ ul.main-navigation > li{
 }
 
 
-.feature{
-    display: flex;
-    align-self: flex-start;
+#features{
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
 }
 
+.feature{
+    display: flex;
+}
+
+#features>ul{
+    width: 80%;
+
+}
 
 .heading>p{
     font-size: 1.15rem;
@@ -354,3 +363,39 @@ ul.main-navigation > li{
 
 
 }
+
+
+
+
+/*desktop screen*/
+
+@media screen and (min-width: 968px){
+
+
+#features{
+    flex-wrap: nowrap;
+    height: auto;
+
+   }
+
+
+
+.feature{
+    margin-left: 3rem;
+   
+}
+
+
+#features>ul{
+    display: flex;
+    align-items: center;
+    width: 35%;
+    margin-right: 13rem;
+    padding-top: 40px;
+
+}
+
+
+
+} 
+
