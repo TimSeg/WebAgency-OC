@@ -25,7 +25,12 @@ h3
 h1{
     color: white;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+h1>strong{
+    color: #5cacd2;
 }
 
 
@@ -106,7 +111,6 @@ nav{
 
 header{
     width: 100%;
-    height: auto;
     overflow: hidden;
     margin-top: 100px;
     display: block;
@@ -147,28 +151,28 @@ header img{
     display: block;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 0;
     color: white;
-    font-size: 1.6rem;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
+    font-size: 0.4rem;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 20px 20px 5px;
+    padding: 5px 5px 5px 1px;
     z-index: 1;
 
 }
 
 .fa-chevron-right{   
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 0;
     color: white;
-    font-size: 1.6rem;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
+    font-size: 0.4rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 5px 20px 20px;
+    padding: 5px 1px 5px 5px;
     z-index: 1;
 }
 
@@ -178,7 +182,7 @@ header img{
 .heading{
     z-index: 1;
     position: absolute;
-    top: 32%;
+    top: 15%;
     left: 10%;
     width: 40%;
     display: inline-block;
@@ -190,10 +194,15 @@ header img{
     color: white;
     margin-top: -1rem;
     margin-bottom: 2rem;
+    font-size: 0.75rem;
 }
 
-h1>strong{
-    color: #5cacd2;
+
+.bouton{
+    background-color: #5cacd2;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 5px;
 }
 
 
@@ -219,12 +228,6 @@ menu{
 .main-navigation{
     display: none;
 }
-
-
-.heading>p{
-    font-size: 0.75rem;
-}
-
 
 
 
@@ -256,10 +259,11 @@ menu{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     
 }
+
 
 
 .skill{
@@ -267,10 +271,41 @@ menu{
     align-items: center;
     text-align: justify;
     font-size: 0.7rem;
+    justify-content: space-around;
 }
 
+.skill-icon{
+    display: flex;
+    color: #5cacd2;
+    height: 70px;
+    width: 70px;
+    min-width: 70px;
+    border: 1px solid #d9d9d9;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fa-circle{
+    position: absolute;
+    padding-top: 4px;
+    right: -12px;
+    top: 22px;
+    background-color: white;
+    width: 25px;
+    height: 20px;
+}
+
+.fa-chart-line,
+.fa-cubes,
+.fa-chart-pie{
+    transform: scale(1.5);
+    margin-left: 2px;
+}
 
 .skill-text{
+    padding-left: 20px;
 }
 
 .skill-text>h3{
@@ -299,6 +334,23 @@ iframe{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*pad screen*/ 
 
 
@@ -310,7 +362,7 @@ iframe{
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 
@@ -333,6 +385,27 @@ ul.main-navigation > li{
 }
 
 
+
+.fa-chevron-left{
+    font-size: 0.8rem;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px 10px 10px 2px;
+    z-index: 1;
+
+}
+
+.fa-chevron-right{   
+    font-size: 0.8rem;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 10px 2px 10px 10px;
+    z-index: 1;
+}
+
+
+
+
 #features{
     flex-wrap: wrap;
     height: auto;
@@ -343,26 +416,29 @@ ul.main-navigation > li{
     display: flex;
 }
 
-#features>ul{
-    width: 80%;
-
-}
 
 .heading>p{
     font-size: 1.15rem;
 }
 
-.bouton{
-    background-color: #5cacd2;
-    padding: 0.8rem;
-    color: white;
-    border-radius: 5px;
-}
-
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -371,6 +447,27 @@ ul.main-navigation > li{
 
 @media screen and (min-width: 968px){
 
+h1{
+    font-size: 2rem;
+    padding-bottom: 1.2rem;
+}
+
+.fa-chevron-left{
+    font-size: 1.6rem;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 20px 20px 20px 5px;
+    z-index: 1;
+
+}
+
+.fa-chevron-right{   
+    font-size: 1.6rem;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    padding: 20px 5px 20px 20px;
+    z-index: 1;
+}
 
 #features{
     flex-wrap: nowrap;
