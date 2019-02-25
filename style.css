@@ -19,7 +19,7 @@ h1,
 h2,
 h3
 {
-    font-family: "fontawesome", Arial, serif;
+    font-family: "fontawesome", sans-serif;
 }
 
 h1{
@@ -89,8 +89,8 @@ ul{
 
 
 
-/*containers*/
-
+/*******containers******/
+/***Home***/
 
 nav{
     position: fixed;
@@ -105,15 +105,10 @@ nav{
     z-index: 3;    
 }
 
-
-menu{
-    display: flex;
-    background-color: #e5e5e5;
-    justify-content: space-around;
-    margin: 0 auto;
-    width: 50%;
-    list-style: none;
+.main-navigation{
+    display: none;
 }
+
 
 
 header{
@@ -238,17 +233,8 @@ header img{
     100%{ left: 0%; }
 }
 
-#contact{
-    display: block;
-    padding-top: 100px;
-}
 
-
-.main-navigation{
-    display: none;
-}
-
-
+/***Services***/
 
 
 .feature{
@@ -336,13 +322,78 @@ header img{
 
 
 
+/***Pojects***/
+
+
 .projets{
     background-color: #f5f5f5;
 }
 
+menu{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width: 40%;
+    list-style: none;
+}
+
+
+#first {
+    border-radius: 5px 0px 0px 5px;
+}
+
+#last {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.label {
+    cursor: pointer;
+    background-color: #e5e5e5;
+    padding: 15px 20px 15px 20px;
+    border-bottom: 3px solid #e5e5e5;
+    display: inline-block;
+    margin: 0 -2px 0 -3px;
+}
+
+
+.input:checked + .label {
+    background-color: #5cadd3;
+    border-bottom-color: #468cad;
+    color: #fff;
+}
+
+.input:checked + .label:after {
+    font-family: "fontawesome";
+    content: "\f0d7"; 
+    color: #468cad; 
+    font-size: 2.5em;
+    position: absolute;
+    display: block;
+    padding: 1px 0 0 25px;
+    
+}
+
+
+#creative:checked + #second:after, #portfolio:checked + #last:after {
+    padding-left: 20px;
+}
+
+menu label:hover {
+    color: white;
+}
+
+menu input {
+    display: none;
+}
+
+
+
+
+
+
+
 .item{
     display: flex;
-    justify-content: space-around;
     width: 80%;
     margin-right: 15%;
     flex-wrap: wrap;
@@ -366,12 +417,23 @@ header img{
     z-index: 1;
 }
 
+
+
+/***Contact***/
+
+#contact{
+    display: block;
+    padding-top: 100px;
+}
+
 iframe{
     width: 100%;
     height: 600px;
 }
 
 
+
+/******Breakpoints******/
 
 /*pad screen*/ 
 
@@ -444,9 +506,13 @@ ul.main-navigation > li{
     font-size: 1.15rem;
 }
 
-
+.item>figure{
+    width: 400px;
+    height: 400px;
 }
 
+
+}
 
 
 
@@ -457,6 +523,10 @@ ul.main-navigation > li{
 h1{
     font-size: 2rem;
     padding-bottom: 1.2rem;
+}
+
+.heading{
+    top: 20%;
 }
 
 .fa-chevron-left{
@@ -507,6 +577,10 @@ h1{
     right: -18px;
 }
 
+.item>figure{
+    width: 200px;
+    height: 200px;
+}
 
 
 } 
