@@ -90,10 +90,12 @@ ul{
 /*******containers******/
 /***Home***/
 
+
 nav{
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
     top: 0;
     left: 0;
@@ -103,11 +105,66 @@ nav{
     z-index: 3;    
 }
 
-.main-navigation{
-    display: none;
+
+a:hover{
+    color: #5cacd2;
 }
 
+#menuToggle{
+    display: block;
+    position: relative;
+    top: -8px;
+    right: -21px;
+    -webkit-user-select: none;
+    z-index: 1;
+}
 
+#menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    right: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+#menuToggle i{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    z-index: 1; 
+}
+
+#menuToggle input:checked ~ i{
+    opacity: 1;
+    transform: rotate(90deg) translate(-2px, -1px);
+}
+
+.main-navigation{
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -20px;
+    padding: 70px;
+    padding-top: 125px;
+    background: white;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.main-navigation li{
+    padding: 20px 0;
+}
+
+#menuToggle input:checked ~ ul{
+    transform: none;
+}
 
 header{
     width: 100%;
@@ -342,10 +399,12 @@ menu{
 
 #first{
     border-radius: 5px 0px 0px 5px;
+   
 }
 
 #last{
     border-radius: 0px 5px 5px 0px;
+    
 }
 
 .label{
@@ -354,6 +413,7 @@ menu{
     padding: 15px 24px 13px 27px;
     border-bottom: 3px solid #e5e5e5;
     display: inline-block;
+    height: 20px;
     margin: 0px 0px 2px -14px;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
@@ -468,7 +528,6 @@ menu input {
 
 
 
-
 /***Contact***/
 
 #contact{
@@ -491,23 +550,36 @@ iframe{
 @media screen and (min-width: 768px){ 
 
 
-.fa-bars{
+
+
+nav{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#menuToggle{
+    display: flex;
+    top: 0;
+    right: 0;
+}
+
+#menuToggle i,
+#menuToggle input{
     display: none;
 }
 
-h1{
-    font-size: 1.5rem;
-}
-
-
-
 .main-navigation{
     display: flex;
+    position: inherit;
+    margin: inherit;
+    padding: inherit;
+    transform: none;
+    transition: none;
 }
 
 
-
-ul.main-navigation > li{
+.main-navigation li{
     margin: 20px;
 }
 
@@ -519,6 +591,10 @@ ul.main-navigation > li{
 }
 
 
+
+h1{
+    font-size: 1.5rem;
+}
 
 .fa-chevron-left{
     font-size: 0.8rem;
@@ -556,6 +632,9 @@ ul.main-navigation > li{
     font-size: 1.15rem;
 }
 
+.label{
+    height: auto;
+}
 
 .items{
     justify-content: center;
@@ -645,12 +724,14 @@ h1{
 
 .items{
     width: 100%;
-    margin-left: -5%;
+    margin-left: -3%;
 }
 
 .items>figure{
     width: 17rem;
     height: auto;
+    margin-left: 1%;
+    margin-bottom: 1%;
 }
 
 .item-name{
