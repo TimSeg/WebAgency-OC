@@ -153,6 +153,7 @@ a:hover{
     padding: 70px;
     padding-top: 125px;
     background: white;
+    opacity: 0.9;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -414,11 +415,16 @@ menu{
     border-bottom: 3px solid #e5e5e5;
     display: inline-block;
     height: 20px;
-    margin: 0px 0px 2px -14px;
+    margin: 1px 2px 0px -8px;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-weight: bold;
     color: rgba(103, 107, 112, 1);
+}
+
+
+.fa-caret-down{
+    display: none;
 }
 
 
@@ -428,16 +434,22 @@ menu{
     color: #fff;
 }
 
-.input:checked + .label:after{
-    font-family: "fontawesome";
-    content: "\f0d7"; 
-    color: #468cad; 
-    font-size: 2.5em;
+
+.input:checked + .label>.fa-caret-down{
+    display: flex;
     position: absolute;
-    display: block;
-    padding: 1px 0 0 25px;
-    
+    margin-top: 5px;
+    margin-left: 22px;
+    font-size: 2rem;
+    color: #5cacd2;
+    opacity: 1;
 }
+
+
+
+.input:checked + .label:after{
+}
+
 
 
 #creative:checked + #second:after, #portfolio:checked + #last:after {
