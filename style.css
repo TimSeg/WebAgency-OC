@@ -547,17 +547,80 @@ menu input {
 /***Contact***/
 
 #contact{
+    position: absolute;
     display: block;
     padding-top: 100px;
-}
-
-iframe{
     width: 100%;
-    border: 0px;
     height: 90vh;
 }
 
 
+iframe{
+    display: block;
+    position: relative;
+    width: 100%;
+    border: 0px;
+    height: 90vh;
+    z-index: 0;
+}
+
+.blue-opacity{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-color: #3491b2;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.form-frame{
+    position: absolute;
+    top: 100%;
+    width: 60%;
+    margin-left: 20%;
+    height: 430px;
+    padding: 20px 35px 20px 20px;
+    z-index: 2;
+    font-family: Arial, sans-serif;
+}
+
+.form-frame h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.form-frame address{
+    font-size: 1rem;
+    font-style: normal;
+    padding-bottom: 10px;
+    color: #64686d;
+}
+
+form input{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b3b3b3;
+}
+
+form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px 0 0 10px;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+
+form .bouton{
+    width: 80%;
+    margin-top: 10px;
+    font-weight: bold;
+    border-bottom: 3px solid #468cad; 
+}
 
 /******Breakpoints******/
 
@@ -673,6 +736,30 @@ h1{
     height: 40px;
 
 }
+
+.form-frame{
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    max-width: 250px;
+    height: 500px;
+    background-color: rgba(255,255,255, 0.7);
+    text-align: left;
+}
+
+.form-frame h3{
+    font-size: 1.3rem;
+}
+
+.form-frame address{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+form .bouton{
+    width: 50%;
+}
+
 
 }
 
