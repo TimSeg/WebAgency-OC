@@ -447,11 +447,6 @@ menu{
 
 
 
-.input:checked + .label:after{
-}
-
-
-
 #creative:checked + #second:after, #portfolio:checked + #last:after {
     padding-left: 20px;
 }
@@ -464,9 +459,6 @@ menu input {
     display: none;
 }
 
-
-
-
 .items{
     display: flex;
     justify-content: center;
@@ -474,8 +466,6 @@ menu input {
     flex-wrap: wrap;
     margin: auto;
     padding: 100px 0 0 0;
-
-
 }
 
 .items>figure{
@@ -488,6 +478,7 @@ menu input {
     width: 100%;
     margin-top: 5%;
 }
+
 
 #all:checked ~ .items .all img,
 #creative:checked ~ .items .creative img,
