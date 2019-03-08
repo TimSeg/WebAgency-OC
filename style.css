@@ -106,7 +106,7 @@ nav{
 }
 
 
-a:hover{
+.main-navigation a:hover{
     color: #5cacd2;
 }
 
@@ -452,7 +452,7 @@ menu{
 }
 
 menu label:hover {
-    color: white;
+    color: #5cacd2;
 }
 
 menu input {
@@ -466,27 +466,20 @@ menu input {
     flex-wrap: wrap;
     margin: auto;
     padding: 100px 0 0 0;
+
 }
 
 .items>figure{
     min-width: 120px;
     width: 80%;
     position: relative;
+    opacity: 0.4;
 }
 
 .portfolio-img{
     width: 100%;
     margin-top: 5%;
 }
-
-
-#all:checked ~ .items .all img,
-#creative:checked ~ .items .creative img,
-#corporate:checked ~ .items .corporate img,
-#portfolio:checked ~ .items .portfolio img{
-    opacity: 1;
-}
-
 
 
 
@@ -533,6 +526,12 @@ menu input {
 .item-name:hover{
     opacity: 1;
 }
+
+figcaption a:hover{
+    color: black;
+}
+
+
 
 
 /***Contact***/
