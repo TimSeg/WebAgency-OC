@@ -1,5 +1,4 @@
 
-
 body{
     background-color: white;
     font-size: 62.5%;
@@ -32,7 +31,6 @@ h1>strong{
     color: #5cacd2;
 }
 
-
 h2{
     display: block;
     padding-top: 100px;
@@ -46,15 +44,12 @@ a{
     font-family: "Roboto", sans-serif;
 }
 
-
-
 a{
     font-size: 0.9rem;
     font-weight: bold;
     color: rgba(103, 107, 112, 1);
     text-decoration: none; 
 }
-
 
 hr{
     display: block;
@@ -104,7 +99,6 @@ nav{
     height: 100px;
     z-index: 3;    
 }
-
 
 .main-navigation a:hover{
     color: #5cacd2;
@@ -186,7 +180,6 @@ header figure{
     font-size: 0;
     text-align: left;
     animation: 20s slidy infinite;
-
 }
 
 header img{
@@ -218,7 +211,6 @@ header img{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 5px 5px 1px;
     z-index: 1;
-
 }
 
 .fa-chevron-right{   
@@ -245,7 +237,6 @@ header img{
     width: 40%;
     display: inline-block;
     text-align: left;
-
 }
 
 .heading>p{
@@ -321,8 +312,7 @@ header img{
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin-left: -30px;
-    
+    margin-left: -30px;   
 }
 
 
@@ -385,27 +375,18 @@ header img{
     background-color: #f5f5f5;
 }
 
-
-.projects-menu{
-    display: flex;
-    justify-content: center;
+.projets>p{
+    padding-bottom: 50px;
 }
 
-menu{
-    display: flex;
-    margin-top: 50px;
-    list-style: none;
-}
 
 
 #first{
-    border-radius: 5px 0px 0px 5px;
-   
+    border-radius: 5px 0px 0px 5px; 
 }
 
 #last{
-    border-radius: 0px 5px 5px 0px;
-    
+    border-radius: 0px 5px 5px 0px; 
 }
 
 .label{
@@ -422,18 +403,15 @@ menu{
     color: rgba(103, 107, 112, 1);
 }
 
-
 .fa-caret-down{
     display: none;
 }
-
 
 .input:checked + .label{
     background-color: #5cacd2;
     border-bottom-color: #468cad;
     color: #fff;
 }
-
 
 .input:checked + .label>.fa-caret-down{
     display: flex;
@@ -445,17 +423,15 @@ menu{
     opacity: 1;
 }
 
-
-
 #creative:checked + #second:after, #portfolio:checked + #last:after {
     padding-left: 20px;
 }
 
-menu label:hover {
+label:hover {
     color: #5cacd2;
 }
 
-menu input {
+.projets>input{
     display: none;
 }
 
@@ -469,11 +445,12 @@ menu input {
 
 }
 
-.items>figure{
+.items>li{
     min-width: 120px;
     width: 80%;
     position: relative;
-    opacity: 0.4;
+    opacity: 0.2;
+    transition: opacity 700ms ease;
 }
 
 .portfolio-img{
@@ -481,7 +458,12 @@ menu input {
     margin-top: 5%;
 }
 
-
+#all:checked ~ .items li,
+#creative:checked ~ .items .creative,
+#corporate:checked ~ .items .corporate,
+#portfolio:checked ~ .items .portfolio{
+    opacity: 1;
+}
 
 .item-name{
     position: absolute;
@@ -508,7 +490,6 @@ menu input {
     font-size: 0.8rem;
 }
 
-
 .item-name i{
     display: flex;
     position: absolute;
@@ -527,10 +508,18 @@ menu input {
     opacity: 1;
 }
 
-figcaption a:hover{
+.item-name a:hover{
     color: black;
 }
 
+#creative:checked ~ .items .corporate>.item-name,
+#creative:checked ~ .items .portfolio>.item-name,
+#corporate:checked ~ .items .creative>.item-name,
+#corporate:checked ~ .items .portfolio>.item-name,
+#portfolio:checked ~ .items .creative>.item-name,
+#portfolio:checked ~ .items .corporate>.item-name{
+    display: none;
+}
 
 
 
@@ -543,7 +532,6 @@ figcaption a:hover{
     width: 100%;
     height: 90vh;
 }
-
 
 iframe{
     display: block;
@@ -604,7 +592,6 @@ form textarea{
     font-family: Arial, sans-serif;
 }
 
-
 form .bouton{
     width: 80%;
     margin-top: 10px;
@@ -620,13 +607,10 @@ form .bouton{
 @media screen and (min-width: 768px){ 
 
 
-
-
 nav{
     flex-direction: row;
     justify-content: space-around;
 }
-
 
 #menuToggle{
     display: flex;
@@ -648,19 +632,15 @@ nav{
     transition: none;
 }
 
-
 .main-navigation li{
     margin: 20px;
 }
-
 
 .main-navigation a:hover,
 .main-navigation a:checked {
     border-top: 3px solid #5cacd2;
     padding-top: 38px;
 }
-
-
 
 h1{
     font-size: 1.5rem;
@@ -672,7 +652,6 @@ h1{
     border-top-right-radius: 20px;
     padding: 10px 10px 10px 2px;
     z-index: 1;
-
 }
 
 .fa-chevron-right{   
@@ -682,9 +661,6 @@ h1{
     padding: 10px 2px 10px 10px;
     z-index: 1;
 }
-
-
-
 
 #features{
     flex-wrap: wrap;
@@ -696,7 +672,6 @@ h1{
     display: block;
     margin-top: 20px;
 }
-
 
 .heading>p{
     font-size: 1.15rem;
@@ -710,11 +685,12 @@ h1{
     justify-content: center;
 }
 
-.items>figure{
+.items>li{
     width: 18rem;
     height: 18rem;
+    margin-right: 2%;
+    margin-bottom: 1%;
 }
-
 
 .item-name{
     bottom: 28%;
@@ -724,7 +700,6 @@ h1{
     top: -20px;
     width: 40px;
     height: 40px;
-
 }
 
 .form-frame{
@@ -750,7 +725,6 @@ form .bouton{
     width: 50%;
 }
 
-
 }
 
 
@@ -774,7 +748,6 @@ h1{
     border-top-right-radius: 50px;
     padding: 20px 20px 20px 5px;
     z-index: 1;
-
 }
 
 .fa-chevron-right{   
@@ -791,20 +764,16 @@ h1{
 
    }
 
-
-
 .feature{
     margin-left: 3rem;
    
 }
-
 
 #features>ul{
     display: flex;
     align-items: center;
     width: 35%;
     padding-top: 40px;
-
 }
 
 .skill{
@@ -820,11 +789,9 @@ h1{
     width: 100%;
 }
 
-.items>figure{
-    width: 17rem;
+.items>li{
+    width: 20rem;
     height: auto;
-    margin-left: 1%;
-    margin-bottom: 1%;
 }
 
 .item-name{
