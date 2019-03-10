@@ -173,7 +173,6 @@ header{
 
 header figure{
     position: relative;
-    display: flex;
     width: 200%;
     margin-left: 0;
     padding: 0;
