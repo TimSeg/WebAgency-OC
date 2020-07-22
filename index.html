@@ -2,11 +2,11 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Webagency</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -16,61 +16,60 @@
             <!--top menu-->
             <nav>
                 <figure>
-                    <img src="images/logo.png" alt="Webagency-logo" class="top-logo">
+                    <a href="#"><img src="images/logo.png" alt="Webagency-logo" class="top-logo"></a>
                 </figure>
                 
-                <ul class="main-navigation">
-                    <li>
-                        <a href="#">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="#nos-services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#anciens-projets">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul> 
+                <div id="menuToggle">
+                    <input type="checkbox">
+                    <i class="fa fa-bars fa-2x"></i>
 
-                <i class="fa fa-bars fa-2x"></i>
+                    <ul class="main-navigation">
+                        <li>
+                            <a href="#">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#nos-services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#anciens-projets">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul> 
+
+                </div>
 
             </nav>
-            
-            
-        
-
 
             <!--top slideshow-->
-        
-
 
         <header>        
-        
-           
-            <article class="heading">
+
+            <section class="heading">
                     <h1 id="accueil"><strong>webagency</strong>: l'agence de tous vos projets !</h1>
                     <p>Vous avez un projet web ? La Webagency vous aide à le réaliser !</p>
                     <a href="#nos-services" class="bouton">Plus d'infos</a>
-            </article>
+            </section>
 
-
-             
             <figure>
                 <img src="images/slider/bg1.jpg" alt="Webagency" title="bg1" id="slide-1" >
 
                 <img src="images/slider/bg2.jpg" alt="Webagency" title="bg2" id="slide-2" >
-            </figure>    
+            </figure>
+                <span class="timeline">
+                    <span class="blue-bar"></span>
+                </span>
 
+            
 
             <i class="fas fa-chevron-left"></i>
             <i class="fas fa-chevron-right"></i>
 
+            
+
         </header>
 
-            
-       
         <!--main content-->
         
         <main>
@@ -87,43 +86,50 @@
 
                 <!--illustrating pic-->
                 
-                    <img src="images/main-feature.png" alt="main-feature" class="feature">
-                
+                <div class="feature">
+                    <img src="images/main-feature.png" alt="main-feature">
+                </div>
                 <!--features-->
 
                 <ul>
                     <li>
                         <section class="skill">
-                            <i class="fas fa-chart-line"></i>
-                            <i class="fas fa-circle"></i>
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
                             <div class="skill-text">
                             <h3>UX design</h3>
                                 <p>
-                                Cela signifie User Experience Design (ou design de l’expérience utilisateur en français). Le but est d'anticiper les attentes et les besoins de l’utilisateur pour créer un site web ou une application. L’objectif final est de rendre votre site accessible et facile à prendre en main pour vos visiteurs. En un mot : efficace.
+                                Cela signifie User Experience Design (ou design de l’expérience utilisateur en français). Le but est d'anticiper les attentes et les besoins de l’utilisateur pour créer un site web ou une application. 
                             </p>
                             </div>
                         </section>
                     </li>
                     <li>
                         <section class="skill">
-                            <i class="fas fa-cubes"></i>
-                            <i class="fas fa-circle"></i>
+                            <div class="skill-icon">
+                                <i class="fas fa-cubes"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
                             <div class="skill-text">
                                 <h3>UI design</h3>
                                 <p>
-                                C'est l'interface utilisateur. La mission de nos UI designers consiste à créer une interface agréable et pratique, facile à prendre en main. Ainsi, l’UI design fait partie de l’UX design, en cela qu’il travaille à donner la meilleure expérience possible à l’utilisateur, mais il s’attache plus particulièrement aux éléments perceptibles : éléments graphiques, boutons, navigation, typographie…
+                                C'est l'interface utilisateur. La mission de nos UI designers consiste à créer une interface agréable et pratique. Ainsi, l’UI design fait partie de l’UX design, mais il s’attache plus particulièrement aux éléments perceptibles : éléments graphiques, boutons, navigation, typographie…
                                 </p>
                             </div>
                         </section>
                     </li>
                     <li>
                         <section class="skill">
-                            <i class="fas fa-chart-pie"></i>
-                            <i class="fas fa-circle"></i>
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-pie"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
                             <div class="skill-text">
                                 <h3>SEO</h3>
                                 <p>
-                                L'optimisation pour les moteurs de recherche, référencement naturel ou SEO (pour search engine optimization), est un ensemble de techniques visant à optimiser la visibilité d'une page web dans les résultats de recherche. Grâce à cela, Webagency peut guarantir le meilleur positionnement de votre site web dans les réponses de Google, Bing...
+                                L'optimisation pour les moteurs de recherche, référencement naturel ou SEO (pour search engine optimization), est une technique visant à optimiser la visibilité d'une page web dans les résultats de recherche de Google, Bing....
                                 </p>
                             </div>
                         </section>
@@ -134,8 +140,8 @@
             </article>
 
 
-
             <!--past projects-->
+
             <article class="projets">
                 <h2 id="anciens-projets">nos projets</h2>
                 <hr>
@@ -144,136 +150,147 @@
                     Voici nos précédents projets. Nous vous les présentons afin que vous puissiez vous faire une idée de nos compétences, et pourquoi-pas, trouver de l'inspiration pour votre site.
                 </p>
                 
-                <menu>
-                    <li><a href="#">All Works</a></li>
-                    <li><a href="#">Creative</a></li>
-                    <li><a href="#">Corporate</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                </menu>
+                        
+
+                        <input class="input" id="all" type="radio" name="team" checked>
+                        <label class="label" for="all" id="first">All Works<i class="fas fa-caret-down"></i></label>
+                    
+            
+                        <input class="input" id="creative" type="radio" name="team">
+                        <label class="label" for="creative" id="second">Creative<i class="fas fa-caret-down"></i></label>
                 
-                <figure class="item">
-
-                    <figure>
-                        <img src="images/portfolio/01.jpg" alt="Portfolio-item 1">
-                        <figcaption class="item-name">
-                        <section>
-                            <h3>Portfolio-item 1</h3>
-                            <p>Le projet numéro 1</p>
-                        </section>
-                        <a href="#"><i class="fas fa-eye"></i></a>
-
-                        </figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/portfolio/02.jpg" alt="Portfolio-item 2">
-                        <figcaption class="item-name">
-                        <section>
-                            <h3>Portfolio-item 2</h3>
-                            <p>Le projet numéro 2</p>
-                        </section>
-                        <a href="#"><i class="fas fa-eye"></i></a>
+                    
+                        <input class="input" id="corporate" type="radio" name="team">
+                        <label class="label" for="corporate" id="third">Corporate<i class="fas fa-caret-down"></i></label>
+                
+                    
+                        <input class="input" id="portfolio" type="radio" name="team">
+                        <label class="label" for="portfolio" id="last">Portfolio<i class="fas fa-caret-down"></i></label>
                         
-                        </figcaption>
-                    </figure>
 
-                    <figure>
-                        <img src="images/portfolio/03.jpg" alt="Portfolio-item 3">
-                        <figcaption class="item-name">
-                        <section>
-                            <h3>Portfolio-item 3</h3>
-                            <p>Le projet numéro 3</p>
-                        </section>
-                        <a href="#"><i class="fas fa-eye"></i></a>
+                <ul class="items">                
 
-                        </figcaption>
-                    </figure>
+                    <li class="creative">
+                        <img src="images/portfolio/01.jpg" alt="Portfolio-item 1" class="portfolio-img">
+                        <div class="item-name">
+                            <section class="item-sub">
+                                <h3>Anonymous Glasses</h3>
+                                <p>Fabricant de lunettes fashion</p>
+                            </section>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </li>
 
-                    <figure>
-                        <img src="images/portfolio/04.jpg" alt="Portfolio-item 4">
-                        <figcaption class="item-name">
-                        <section>
-                            <h3>Portfolio-item 4</h3>
-                            <p>Le projet numéro 4</p>
-                        </section>
-                        <a href="#"><i class="fas fa-eye"></i></a>
+                    <li class="portfolio">
+                        <img src="images/portfolio/02.jpg" alt="Portfolio-item 2" class="portfolio-img">
+                        <div class="item-name">
+                            <section class="item-sub">
+                                <h3>Funny rabbit</h3>
+                                <p>Site de studio de design</p>
+                            </section>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </li>
 
-                        </figcaption>
-                    </figure>
+                    <li class="corporate">
+                        <img src="images/portfolio/03.jpg" alt="Portfolio-item 3" class="portfolio-img">
+                        <div class="item-name">
+                            <section class="item-sub">
+                                <h3>Pompadour</h3>
+                                <p>Refonte de l'identité de marque</p>
+                            </section>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </li>
 
-                    <figure>
-                        <img src="images/portfolio/05.jpg" alt="Portfolio-item 5">
-                        <figcaption class="item-name">
-                        <section>
-                            <h3>Portfolio-item 5</h3>
-                            <p>Le projet numéro 5</p>
-                        </section>
-                        <a href="#"><i class="fas fa-eye"></i></a>
+                    <li class="creative">
+                        <img src="images/portfolio/04.jpg" alt="Portfolio-item 4" class="portfolio-img">
+                        <div class="item-name">
+                            <section class="item-sub">
+                                <h3>Building blueprints</h3>
+                                <p>Agence d'architecture</p>
+                            </section>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </li>
 
-                        </figcaption>
-                    </figure>
+                    <li class="corporate">
+                        <img src="images/portfolio/05.jpg" alt="Portfolio-item 5" class="portfolio-img">
+                        <div class="item-name">
+                            <section class="item-sub">
+                                <h3>Shop follies</h3>
+                                <p>Marketplace de mode</p>
+                            </section>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </li>
 
-                    <figure>
-                        <img src="images/portfolio/06.jpg" alt="Portfolio-item 6">
-                        <figcaption class="item-name">
-                        <section>
-                            <h3>Portfolio-item 6</h3>
-                            <p>Le projet numéro 6</p>
-                        </section>
-                        <a href="#"><i class="fas fa-eye"></i></a>
-                        
-                        </figcaption>
-                    </figure>
+                    <li class="portfolio">
+                        <img src="images/portfolio/06.jpg" alt="Portfolio-item 6" class="portfolio-img">
+                        <div class="item-name">
+                            <section class="item-sub">
+                                <h3>Perfect trip</h3>
+                                <p>Agence de voyage en ligne</p>
+                            </section>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </li>
 
-                    <figure>
-                        <img src="images/portfolio/07.jpg" alt="Portfolio-item 7">
-                        <figcaption class="item-name">
-                        <section>
-                            <h3>Portfolio-item 7</h3>
-                            <p>Le projet numéro 7</p>
-                        </section>
-                        <a href="#"><i class="fas fa-eye"></i></a>
-                        
-                        </figcaption>
-                    </figure>
+                    <li class="creative">
+                        <img src="images/portfolio/07.jpg" alt="Portfolio-item 7" class="portfolio-img">
+                        <div class="item-name">
+                            <section class="item-sub">
+                                <h3>Rocket-boost</h3>
+                                <p>Création de logo</p>
+                            </section>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </li>
 
-                    <figure>
-                        <img src="images/portfolio/08.jpg" alt="Portfolio-item 8">
-                        <figcaption class="item-name">
-                        <section>
-                            <h3>Portfolio-item 8</h3>
-                            <p>Le projet numéro 8</p>
-                        </section>
-                        <a href="#"><i class="fas fa-eye"></i></a>
-                        
-                        </figcaption>
-                    </figure>
-                </figure>
+                    <li class="corporate">
+                        <img src="images/portfolio/08.jpg" alt="Portfolio-item 8" class="portfolio-img">
+                        <div class="item-name">
+                            <section class="item-sub">
+                                <h3>Nice office</h3>
+                                <p>Magasins de bureautique</p>
+                            </section>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </li>
+
+                </ul>
 
             </article>
             <!--location and contact form-->
             
             
-            <section class="contact-us">
-                <h3 id="contact">Contact Info</h3>
+            <section id="contact">
 
-            <address><strong>WebAgency SAS</strong><br>25 rue d'Hauteville 75010 Paris<br>Tel : 01.02.03.04.05</address>
 
-            <form method="post" action="process.php">
+            <div class="form-frame">
+                <h3>Contact Info</h3>
 
-                <input type="text" name="name" placeholder="Name" size="50" maxlength="50">
+                <address><strong>WebAgency SAS</strong><br>25 rue d'Hauteville 75010 Paris<br>Tel : 01.02.03.04.05</address>
 
-                <input type="email" name="email" placeholder="Email" size="50" maxlength="50">
+                <form method="post" action="process.php">
 
-                <input type="text" name="subject" placeholder="Subject" size="50" maxlength="50">
+                    <input type="text" name="name" placeholder="Name" size="50" maxlength="50">
 
-                <textarea name="message">Message</textarea>
+                    <input type="email" name="email" placeholder="Email" size="50" maxlength="50">
 
-                <input type="submit" value="Send Message">
-            </form>
-        </section>
+                    <input type="text" name="subject" placeholder="Subject" size="50" maxlength="50">
+
+                    <textarea name="message">Message</textarea>
+
+                    <input type="submit" class="bouton" value="Send Message">
+                </form>
+
+            </div>
+            
+            <div class="blue-opacity"></div>
+
         <iframe src="https://maps.google.com/maps?;hl=en&amp;q=25%20rue%20d'Hauteville%2075010%20Paris+(Webagency)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-
+            </section>
     </main>
 </body>
 </html>
